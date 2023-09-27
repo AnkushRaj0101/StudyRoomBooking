@@ -1,0 +1,30 @@
+
+  <table class="table ">
+    <thead>
+      <tr>
+        <th>Sl.no</th>
+        <th >Name</th>
+        <th >RoomNo</th>
+        <th >Available</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let room of rooms; let i = index">
+        <th>{{ i + 1 }}</th>
+        <td>{{ room.name }}</td>
+        <td>{{ room.roomNumber }}</td>
+        <td>
+          <i class="true-icon" *ngIf="room.isAvailable === true">
+           <b>Yes</b>
+          </i>
+          <i class="false-icon" *ngIf="room.isAvailable === false">
+           <b>No</b>
+          </i>
+        </td>
+      </tr>
+    </tbody>
+   
+  </table>
+  <div class="card" *ngIf="!rooms || rooms.length <= 0">
+    <p >No Record Found</p>
+  </div>

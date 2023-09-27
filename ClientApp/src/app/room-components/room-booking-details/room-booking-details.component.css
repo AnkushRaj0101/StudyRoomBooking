@@ -1,0 +1,58 @@
+/* Card Styles */
+.card {
+    border: 1px solid #13059659;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+  }
+  
+  .card-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .card-body {
+    background-color: #f0f8ff;
+    border: 1px solid #13059659;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add a keyframe for the fadeIn animation for card-bodies */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  b {
+    font-weight: bold;
+  }
+  
+  /* Hover effect for the card-bodies */
+  .card-body:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  

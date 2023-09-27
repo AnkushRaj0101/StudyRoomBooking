@@ -1,0 +1,79 @@
+<div class="container-fluid">
+  <div class="form-container">
+    <form [formGroup]="registrationForm" (ngSubmit)="SubmitForm()" #form="ngForm">
+      <div class="row mb-2 mt-3">
+        <!-- First name field start -->
+        <div class="col">
+          <label class="form-label text-primary" for="firstname">First Name:</label>
+          <input type="text" id="firstname" formControlName="firstname" class="form-control" placeholder="Enter your First name">
+          <div *ngIf="registrationForm.get('firstname')?.touched && registrationForm.get('firstname')?.hasError('required')" class="error-message">
+            First name is required.
+          </div>
+          <div *ngIf="registrationForm.get('firstname')?.dirty && registrationForm.get('firstname')?.errors?.['pattern']" class="error-message">
+            Only alphabets are allowed in the first name.
+          </div>
+          <div *ngIf="registrationForm.get('firstname')?.dirty && registrationForm.get('firstname')?.hasError('minlength')" class="error-message">
+            First name must be at least 4 characters long.
+          </div>
+          <div *ngIf="registrationForm.get('firstname')?.dirty && registrationForm.get('firstname')?.hasError('maxlength')" class="error-message">
+            First name must be 30 characters long only.
+          </div>
+        </div>
+        <!-- First name field end -->
+        <!-- Last name field start -->
+        <div class="col">
+          <label for="lastname" class="form-label text-primary">Last Name:</label>
+          <input type="text" id="lastname" formControlName="lastname" class="form-control" placeholder="Enter your Last name">
+          <div *ngIf="registrationForm.get('lastname')?.touched && registrationForm.get('lastname')?.hasError('required')" class="error-message">
+            Last name is required.
+          </div>
+          <div *ngIf="registrationForm.get('lastname')?.dirty && registrationForm.get('lastname')?.errors?.['pattern']" class="error-message">
+            Only alphabets are allowed in the last name.
+          </div>
+          <div *ngIf="registrationForm.get('lastname')?.dirty && registrationForm.get('lastname')?.hasError('minlength')" class="error-message">
+            Last name must be at least 4 characters long.
+          </div>
+          <div *ngIf="registrationForm.get('lastname')?.dirty && registrationForm.get('lastname')?.hasError('maxlength')" class="error-message">
+            Last name must be 25 max characters long only.
+          </div>
+        </div>
+      </div>
+      <!-- Last name field end -->
+      <!-- Email field start -->
+      <div class="mb-2 mt-3">
+        <label for="email" class="form-label text-primary">Email ID:</label>
+        <input type="email" id="email" formControlName="email" class="form-control" placeholder="Enter your Email Id">
+        <div *ngIf="registrationForm.get('email')?.touched && registrationForm.get('email')?.errors?.['required']" class="error-message">
+          Email ID is required.
+        </div>
+        <div *ngIf="registrationForm.get('email')?.touched && registrationForm.get('email')?.errors?.['email']" class="error-message">
+          Invalid email format.
+        </div>
+        <div *ngIf="registrationForm.get('email')?.touched && registrationForm.get('email')?.hasError('pattern')" class="error-message">
+          Please provide valid email format.
+        </div>
+      </div>
+      <!-- Email field end -->
+      <!-- Date field start -->
+      <div class="mb-2 mt-3">
+        <label for="date" class="form-label text-primary">Date:</label>
+        <input type="date" id="date" formControlName="date" class="form-control">
+        <div *ngIf="registrationForm.get('date')?.touched && registrationForm.get('date')?.hasError('required')" class="error-message">
+          Date is required.
+        </div>
+        <div *ngIf="registrationForm.get('date')?.touched && registrationForm.get('date')?.hasError('previousDay')" class="error-message">
+          Date cannot be a previous day.
+        </div>
+      </div>
+      <!-- Date field end -->
+      <div class="text-center mt-3">
+        <button type="submit" [disabled]="registrationForm.invalid">Book Study Room</button>
+      </div>
+      <div class="row text-center mt-2">
+        <div class="col register">
+          <a class="text-" routerLink="/"><b>Go to Home Page</b></a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

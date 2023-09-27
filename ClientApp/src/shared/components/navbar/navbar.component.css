@@ -1,0 +1,43 @@
+/* app.component.css */
+
+/* Style the navbar background color, text color, and links */
+.navbar {
+    background-color: #3498db; /* Change to your preferred background color */
+    color: rgb(187, 8, 8); /* Change to your preferred text color */
+  }
+  
+  /* Style the navbar brand link */
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Style the navbar links */
+  .navbar-nav .nav-link {
+    color: rgb(5, 0, 0); /* Change to your preferred link text color */
+    font-weight: bold;
+    transition: color 0.2s; /* Add a smooth transition effect */
+  }
+  
+  /* Change link color on hover */
+  .navbar-nav .nav-link:hover {
+    color: #52617050; /* Change to your preferred hover color */
+  }
+  
+  /* Style the navbar toggle button */
+  .navbar-toggler-icon {
+    background-color: white; /* Change to your preferred color */
+  }
+  
+  /* Style the booking details button */
+  .btn-outline-success {
+    color: #3498db; /* Button text color */
+    border-color: #3498db; /* Button border color */
+    font-weight: bold;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #3498db; /* Button background color on hover */
+    color: white; /* Button text color on hover */
+  }
+  

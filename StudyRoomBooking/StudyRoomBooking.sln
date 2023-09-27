@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyRoomBooking", "StudyRoomBooking.csproj", "{8E8A95C6-C40B-4675-BB4F-585A7F7D4F31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyRoomBooking.Core", "..\StudyRoomBooking.Core\StudyRoomBooking.Core.csproj", "{9167AF5F-F685-496E-A99A-3D3953BAF6CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyRoomBooking.DataAccess", "..\StudyRoomBooking.DataAccess\StudyRoomBooking.DataAccess.csproj", "{68828E2D-514B-4ADD-8FA0-500D9474D6E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyRoomBooking.Models", "..\StudyRoomBooking.Models\StudyRoomBooking.Models.csproj", "{C92773DE-C984-4679-BAE2-0C39942BDEB8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyRoomBooking.Fixtures", "..\StudyRoomBooking.Fixtures\StudyRoomBooking.Fixtures.csproj", "{3EE2A2EE-84DC-49F5-B2CA-980F6E388285}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyRoomBooking.Core.Fixtures", "..\StudyRoomBooking.Core.Fixtures\StudyRoomBooking.Core.Fixtures.csproj", "{9FC081D9-A3A0-4F61-BA1C-6B5D9A6F6C27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyRoomBooking.DataAccess.Fixtures", "..\StudyRoomBooking.DataAccess.Fixtures\StudyRoomBooking.DataAccess.Fixtures.csproj", "{886BADF7-72B7-4D01-858E-A973C8946D7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E8A95C6-C40B-4675-BB4F-585A7F7D4F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E8A95C6-C40B-4675-BB4F-585A7F7D4F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E8A95C6-C40B-4675-BB4F-585A7F7D4F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E8A95C6-C40B-4675-BB4F-585A7F7D4F31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9167AF5F-F685-496E-A99A-3D3953BAF6CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9167AF5F-F685-496E-A99A-3D3953BAF6CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9167AF5F-F685-496E-A99A-3D3953BAF6CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9167AF5F-F685-496E-A99A-3D3953BAF6CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68828E2D-514B-4ADD-8FA0-500D9474D6E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68828E2D-514B-4ADD-8FA0-500D9474D6E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68828E2D-514B-4ADD-8FA0-500D9474D6E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68828E2D-514B-4ADD-8FA0-500D9474D6E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92773DE-C984-4679-BAE2-0C39942BDEB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92773DE-C984-4679-BAE2-0C39942BDEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92773DE-C984-4679-BAE2-0C39942BDEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92773DE-C984-4679-BAE2-0C39942BDEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE2A2EE-84DC-49F5-B2CA-980F6E388285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE2A2EE-84DC-49F5-B2CA-980F6E388285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE2A2EE-84DC-49F5-B2CA-980F6E388285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE2A2EE-84DC-49F5-B2CA-980F6E388285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FC081D9-A3A0-4F61-BA1C-6B5D9A6F6C27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC081D9-A3A0-4F61-BA1C-6B5D9A6F6C27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC081D9-A3A0-4F61-BA1C-6B5D9A6F6C27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC081D9-A3A0-4F61-BA1C-6B5D9A6F6C27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886BADF7-72B7-4D01-858E-A973C8946D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886BADF7-72B7-4D01-858E-A973C8946D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886BADF7-72B7-4D01-858E-A973C8946D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886BADF7-72B7-4D01-858E-A973C8946D7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4AE26A8-0781-4A58-A5DA-E4A796BA4626}
+	EndGlobalSection
+EndGlobal
